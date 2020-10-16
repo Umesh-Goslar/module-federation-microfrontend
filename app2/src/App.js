@@ -15,7 +15,7 @@ const App = props => {
     <>
       <div className='container'>
         <div className='column'>
-          <div><h1 className="ui header ">Service App</h1></div>
+          <div><h1 className="ui header ">Service app</h1></div>
           <br />
           <div className="ui four cards">
             <div className="ui card">

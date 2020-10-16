@@ -1,8 +1,7 @@
 .container {
   margin: 3em auto;
   max-width: 100%;
-  background: #efefef;
-  min-height: 600px;
+  min-height: 400px;
 }
 
 .column {
@@ -10,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  width: 80%;
+  padding: 0 15px;
 }
 
 .column-header {

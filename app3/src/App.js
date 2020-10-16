@@ -34,29 +34,33 @@ export default class App extends React.Component {
     }
     return (
       <>
-
+        <div id={"parentApp"} style={{ border: "1px solid red", margin: "10px 5px" }}>
+          Parent app
         <div className="ui small menu">
-          <a className="active item" onClick={this.roccApp} >Home</a>
-          <a className="item">Admin</a>
-          <div className="right menu">
-            <i className="large icons" style={{ marginRight: "2rem", cursor: "pointer" }} onClick={this.serviceApp}>
-              <br />
-              <i aria-hidden="true" className="user icon"></i>
-            </i>
+            <a className="active item" onClick={this.roccApp} >Home</a>
+            <a className="item">Admin</a>
+            <div className="right menu">
+              <i className="large icons" style={{ marginRight: "2rem", cursor: "pointer" }} onClick={this.serviceApp}>
+                <br />
+                <i aria-hidden="true" className="user icon"></i>
+              </i>
 
-            <div role="listbox" aria-expanded="false" className="ui item dropdown" >
-              <div aria-atomic="true" aria-live="polite" role="alert" className="divider text">Language</div>
-              <i aria-hidden="true" className="dropdown icon"></i>
-              <div className="menu transition">
-                <div role="option" className="item">English</div>
-                <div role="option" className="item">Russian</div>
-                <div role="option" className="item">Spanish</div>
+              <div role="listbox" aria-expanded="false" className="ui item dropdown" >
+                <div aria-atomic="true" aria-live="polite" role="alert" className="divider text">Language</div>
+                <i aria-hidden="true" className="dropdown icon"></i>
+                <div className="menu transition">
+                  <div role="option" className="item">English</div>
+                  <div role="option" className="item">Russian</div>
+                  <div role="option" className="item">Spanish</div>
+                </div>
               </div>
+              <div className="item"><button className="ui primary button">Logout</button></div>
             </div>
-            <div className="item"><button className="ui primary button">Logout</button></div>
           </div>
         </div>
-        {component}
+        <div id={"parentApp"} style={{ color: "red", border: "1px solid red", margin: "10px 5px" }}>Child app
+          {component}
+        </div>
       </>
     );
   }
