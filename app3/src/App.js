@@ -35,8 +35,8 @@ export default class App extends React.Component {
     return (
       <>
         <div id={"parentApp"} style={{ border: "1px solid red", margin: "10px 5px" }}>
-          Parent app
-        <div className="ui small menu">
+          <h4 style={{ color: "red" }}>Parent app</h4>
+          <div className="ui small menu">
             <a className="active item" onClick={this.roccApp} >Home</a>
             <a className="item">Admin</a>
             <div className="right menu">
@@ -58,7 +58,8 @@ export default class App extends React.Component {
             </div>
           </div>
         </div>
-        <div id={"parentApp"} style={{ color: "red", border: "1px solid red", margin: "10px 5px" }}>Child app
+        <div id={"parentApp"} style={{ color: "red", border: "1px solid red", margin: "10px 5px" }}>
+          <h4>Child app</h4>
           {component}
         </div>
       </>
